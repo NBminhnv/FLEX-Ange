@@ -48,13 +48,13 @@
 
 - (FLEXWindow *)explorerWindow {
     NSAssert(NSThread.isMainThread, @"You must use %@ from the main thread only.", NSStringFromClass([self class]));
-    
+
     if (!_explorerWindow) {
         _explorerWindow = [[FLEXWindow alloc] initWithFrame:FLEXUtility.appKeyWindow.bounds];
         _explorerWindow.eventDelegate = self;
         _explorerWindow.rootViewController = self.explorerViewController;
     }
-    
+
     return _explorerWindow;
 }
 
@@ -68,6 +68,8 @@
 }
 
 - (void)showExplorer {
+    BOOL wasHidden = self.explorerWindow.hidden;
+
     UIWindow *flex = self.explorerWindow;
     flex.hidden = NO;
     if (@available(iOS 13.0, *)) {
@@ -76,10 +78,22 @@
             flex.windowScene = FLEXUtility.appKeyWindow.windowScene;
         }
     }
+
+    // Call the callback if the hidden state changed and the callback exists
+    if (wasHidden && self.onExplorerHiddenChanged) {
+        self.onExplorerHiddenChanged(NO);
+    }
 }
 
 - (void)hideExplorer {
+    BOOL wasVisible = !self.explorerWindow.hidden;
+
     self.explorerWindow.hidden = YES;
+
+    // Call the callback if the hidden state changed and the callback exists
+    if (wasVisible && self.onExplorerHiddenChanged) {
+        self.onExplorerHiddenChanged(YES);
+    }
 }
 
 - (void)toggleExplorer {
@@ -122,10 +136,17 @@
 }
 
 - (void)showExplorerFromScene:(UIWindowScene *)scene {
+    BOOL wasHidden = self.explorerWindow.hidden;
+
     if (@available(iOS 13.0, *)) {
         self.explorerWindow.windowScene = scene;
     }
     self.explorerWindow.hidden = NO;
+
+    // Call the callback if the hidden state changed and the callback exists
+    if (wasHidden && self.onExplorerHiddenChanged) {
+        self.onExplorerHiddenChanged(NO);
+    }
 }
 
 - (BOOL)isHidden {

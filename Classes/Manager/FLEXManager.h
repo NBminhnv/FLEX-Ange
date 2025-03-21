@@ -17,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL isHidden;
 @property (nonatomic, readonly) FLEXExplorerToolbar *toolbar;
 
+/// Callback that gets triggered whenever the explorer window's hidden state changes
+/// The boolean parameter indicates whether the explorer is hidden (YES) or visible (NO)
+@property (nonatomic, copy, nullable) void (^onExplorerHiddenChanged)(BOOL isHidden);
+
 - (void)showExplorer;
 - (void)hideExplorer;
 - (void)toggleExplorer;

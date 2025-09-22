@@ -56,4 +56,8 @@ Pod::Spec.new do |spec|
                                "Classes/GlobalStateExplorers/Globals/FLEXGlobalsEntry.h",
                                "Classes/GlobalStateExplorers/FileBrowser/FLEXFileBrowserController.h"
                               ]
+spec.dependency "HyperioniOS/Core",
+spec.dependency "HyperioniOS/AttributesInspector",
+spec.dependency "HyperioniOS/Measurements",
+spec.dependency "HyperioniOS/SlowAnimations",
 end

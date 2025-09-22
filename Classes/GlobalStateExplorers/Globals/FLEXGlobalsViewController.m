@@ -96,8 +96,9 @@
         case FLEXGlobalsRowMainRunLoop:
         case FLEXGlobalsRowMainThread:
         case FLEXGlobalsRowOperationQueue:
+        case FLEXGlobalsRowHyperion:
             return [FLEXObjectExplorerFactory flex_concreteGlobalsEntry:row];
-        
+
         case FLEXGlobalsRowCount: break;
     }
     
@@ -148,6 +149,7 @@
                 [self globalsEntryForRow:FLEXGlobalsRowMainRunLoop],
                 [self globalsEntryForRow:FLEXGlobalsRowMainThread],
                 [self globalsEntryForRow:FLEXGlobalsRowOperationQueue],
+                [self globalsEntryForRow:FLEXGlobalsRowHyperion],
             ]
         };
 

@@ -22,6 +22,7 @@
 #import "FLEXNSDataShortcuts.h"
 #import "FLEXBlockShortcuts.h"
 #import "FLEXUtility.h"
+@import HyperionCore;
 
 @implementation FLEXObjectExplorerFactory
 static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = nil;
@@ -158,6 +159,8 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
             return @"🧵  NSThread.mainThread";
         case FLEXGlobalsRowOperationQueue:
             return @"📚  NSOperationQueue.mainQueue";
+        case FLEXGlobalsRowHyperion:
+            return @"👾  Hyperion";
         default: return nil;
     }
 }
@@ -229,6 +232,7 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
         case FLEXGlobalsRowBrowseBundle:
         case FLEXGlobalsRowBrowseContainer:
         case FLEXGlobalsRowCount:
+        case FLEXGlobalsRowHyperion:
             return nil;
     }
     
@@ -252,6 +256,10 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
                 }
             };
         }
+        case FLEXGlobalsRowHyperion:
+            return ^(UITableViewController *host) {
+                [[HyperionManager sharedInstance] togglePluginDrawer];
+            };
         default: return nil;
     }
 }

@@ -22,6 +22,7 @@
 #import "FLEXNSDataShortcuts.h"
 #import "FLEXBlockShortcuts.h"
 #import "FLEXUtility.h"
+#import "FLEXManager.h"
 @import HyperionCore;
 
 @implementation FLEXObjectExplorerFactory
@@ -259,6 +260,7 @@ static NSMutableDictionary<id<NSCopying>, Class> *classesToRegisteredSections = 
         case FLEXGlobalsRowHyperion:
             return ^(UITableViewController *host) {
                 [[HyperionManager sharedInstance] togglePluginDrawer];
+                [FLEXManager.sharedManager hideExplorer];
             };
         default: return nil;
     }

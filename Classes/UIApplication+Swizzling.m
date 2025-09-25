@@ -8,6 +8,7 @@
 
 #import "UIApplication+Swizzling.h"
 #import <objc/runtime.h>
+#import "FLEXManager.h"
 
 static BOOL isShakeSwizzlingEnabled = NO;
 
@@ -80,31 +81,7 @@ static BOOL isShakeSwizzlingEnabled = NO;
 - (void)flex_motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     // Handle shake gesture
     if (motion == UIEventSubtypeMotionShake) {
-        // Custom shake handling logic goes here
-        NSLog(@"FLEX: Shake gesture detected!");
-        
-        // You can add your custom shake handling code here
-        // For example, showing FLEX interface or performing custom actions
-        
-        // Call the original implementation if needed
-        // [self flex_motionEnded:motion withEvent:event];
-        
-        // Example: Show an alert or trigger FLEX
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Shake Detected"
-                                                                           message:@"Custom shake handler triggered!"
-                                                                    preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
-                                                               style:UIAlertActionStyleDefault
-                                                             handler:nil];
-            [alert addAction:okAction];
-            
-            UIViewController *rootViewController = self.keyWindow.rootViewController;
-            if (rootViewController) {
-                [rootViewController presentViewController:alert animated:YES completion:nil];
-            }
-        });
+        [FLEXManager.sharedManager toggleExplorer];
     } else {
         // For non-shake motions, call the original implementation
         [self flex_motionEnded:motion withEvent:event];

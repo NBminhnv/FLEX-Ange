@@ -102,7 +102,6 @@
 		3A4C95421B5B21410088C3F2 /* FLEXNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4C94C21B5B21410088C3F2 /* FLEXNetworkObserver.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3A4C95431B5B21410088C3F2 /* FLEXNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C94C31B5B21410088C3F2 /* FLEXNetworkObserver.m */; };
 		3A4C95471B5B217D0088C3F2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4C95461B5B217D0088C3F2 /* libz.dylib */; };
-		47AD696C6E1CA8E939319A93 /* Pods_FLEX_FLEXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25567132EDD6104F8DFB4D58 /* Pods_FLEX_FLEXTests.framework */; };
 		679F64861BD53B7B00A8C94C /* FLEXCookiesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 679F64841BD53B7B00A8C94C /* FLEXCookiesViewController.h */; };
 		679F64871BD53B7B00A8C94C /* FLEXCookiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679F64851BD53B7B00A8C94C /* FLEXCookiesViewController.m */; };
 		71E1C2132307FBB800F5032A /* FLEXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E1C20B2307FBB700F5032A /* FLEXKeychain.h */; };
@@ -127,6 +126,8 @@
 		779B1EDA1C0C4D7C001F5E49 /* FLEXTableListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 779B1ECC1C0C4D7C001F5E49 /* FLEXTableListViewController.h */; };
 		779B1EDB1C0C4D7C001F5E49 /* FLEXTableListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779B1ECD1C0C4D7C001F5E49 /* FLEXTableListViewController.m */; };
 		779B1EDD1C0C4EAD001F5E49 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 779B1EDC1C0C4EAD001F5E49 /* libsqlite3.dylib */; };
+		866BC6E92E8528F3008969B8 /* UIApplication+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 866BC6E82E8528F3008969B8 /* UIApplication+Swizzling.h */; };
+		866BC6EB2E852A44008969B8 /* UIApplication+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 866BC6EA2E852A44008969B8 /* UIApplication+Swizzling.m */; };
 		942DCD871BAE0CA300DB5DC2 /* FLEXKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 942DCD831BAE0AD300DB5DC2 /* FLEXKeyboardShortcutManager.m */; };
 		94A515141C4CA1C00063292F /* FLEXManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A515131C4CA1C00063292F /* FLEXManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94A515171C4CA1D70063292F /* FLEXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A515151C4CA1D70063292F /* FLEXManager.m */; };
@@ -328,7 +329,6 @@
 		C3A9424A23C78878006871A3 /* FLEXHierarchyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A9424823C78878006871A3 /* FLEXHierarchyViewController.m */; };
 		C3A9424D23C78CFF006871A3 /* FHSViewSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A9424B23C78CFF006871A3 /* FHSViewSnapshot.h */; };
 		C3A9424E23C78CFF006871A3 /* FHSViewSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A9424C23C78CFF006871A3 /* FHSViewSnapshot.m */; };
-		C3AF1DFF569CDD2A11B5CA15 /* Pods_FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D567F080A1EB823006EB09 /* Pods_FLEX.framework */; };
 		C3BFD070233C23ED0015FB82 /* NSArray+FLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BFD06E233C23ED0015FB82 /* NSArray+FLEX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3BFD071233C23ED0015FB82 /* NSArray+FLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFD06F233C23ED0015FB82 /* NSArray+FLEX.m */; };
 		C3DB9F642107FC9600B46809 /* FLEXObjectRef.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DB9F622107FC9600B46809 /* FLEXObjectRef.h */; };
@@ -393,7 +393,6 @@
 		03ED813B24B7D91200831CA0 /* FLEXTableRowDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXTableRowDataViewController.m; sourceTree = "<group>"; };
 		03ED813C24B7D91200831CA0 /* FLEXTableRowDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXTableRowDataViewController.h; sourceTree = "<group>"; };
 		04F1CA181C137CF1000A52B0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		0963D072B9C657A86B60583C /* Pods-FLEX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEX.debug.xcconfig"; path = "Target Support Files/Pods-FLEX/Pods-FLEX.debug.xcconfig"; sourceTree = "<group>"; };
 		1C27A8B61F0E5A0300F0D02D /* FLEXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLEXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C27A8B81F0E5A0400F0D02D /* FLEXTestsMethodsList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLEXTestsMethodsList.m; sourceTree = "<group>"; };
 		1C27A8BA1F0E5A0400F0D02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -402,10 +401,8 @@
 		224D49A51C673AB5000EAB86 /* FLEXRealmDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXRealmDatabaseManager.m; sourceTree = "<group>"; };
 		224D49A61C673AB5000EAB86 /* FLEXSQLiteDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXSQLiteDatabaseManager.h; sourceTree = "<group>"; };
 		224D49A71C673AB5000EAB86 /* FLEXSQLiteDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXSQLiteDatabaseManager.m; sourceTree = "<group>"; };
-		25567132EDD6104F8DFB4D58 /* Pods_FLEX_FLEXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLEX_FLEXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF6B04B1D494BE50006BDA5 /* FLEXNetworkCurlLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXNetworkCurlLogger.m; sourceTree = "<group>"; };
 		2EF6B04C1D494BE50006BDA5 /* FLEXNetworkCurlLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXNetworkCurlLogger.h; sourceTree = "<group>"; };
-		322822C91BE1A33EEC336520 /* Pods-FLEX-FLEXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEX-FLEXTests.debug.xcconfig"; path = "Target Support Files/Pods-FLEX-FLEXTests/Pods-FLEX-FLEXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A4C941F1B5B20570088C3F2 /* FLEX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLEX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4C94231B5B20570088C3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4C94241B5B20570088C3F2 /* FLEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLEX.h; sourceTree = "<group>"; };
@@ -519,7 +516,8 @@
 		779B1ECC1C0C4D7C001F5E49 /* FLEXTableListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXTableListViewController.h; sourceTree = "<group>"; };
 		779B1ECD1C0C4D7C001F5E49 /* FLEXTableListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXTableListViewController.m; sourceTree = "<group>"; };
 		779B1EDC1C0C4EAD001F5E49 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
-		81D567F080A1EB823006EB09 /* Pods_FLEX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLEX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		866BC6E82E8528F3008969B8 /* UIApplication+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Swizzling.h"; sourceTree = "<group>"; };
+		866BC6EA2E852A44008969B8 /* UIApplication+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Swizzling.m"; sourceTree = "<group>"; };
 		942DCD821BAE0AD300DB5DC2 /* FLEXKeyboardShortcutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXKeyboardShortcutManager.h; sourceTree = "<group>"; };
 		942DCD831BAE0AD300DB5DC2 /* FLEXKeyboardShortcutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXKeyboardShortcutManager.m; sourceTree = "<group>"; };
 		94A515131C4CA1C00063292F /* FLEXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXManager.h; sourceTree = "<group>"; };
@@ -769,8 +767,6 @@
 		C3F977802311B38F0032776D /* NSString+ObjcRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ObjcRuntime.m"; sourceTree = "<group>"; };
 		C3F977812311B38F0032776D /* NSObject+FLEX_Reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FLEX_Reflection.h"; sourceTree = "<group>"; };
 		C3F977822311B38F0032776D /* NSObject+FLEX_Reflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FLEX_Reflection.m"; sourceTree = "<group>"; };
-		E5E25AE7E9EEE3477758C720 /* Pods-FLEX-FLEXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEX-FLEXTests.release.xcconfig"; path = "Target Support Files/Pods-FLEX-FLEXTests/Pods-FLEX-FLEXTests.release.xcconfig"; sourceTree = "<group>"; };
-		FC9B72EAA12E89C30EFEFCED /* Pods-FLEX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEX.release.xcconfig"; path = "Target Support Files/Pods-FLEX/Pods-FLEX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -779,7 +775,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C27A8BB1F0E5A0400F0D02D /* FLEX.framework in Frameworks */,
-				47AD696C6E1CA8E939319A93 /* Pods_FLEX_FLEXTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,7 +784,6 @@
 			files = (
 				779B1EDD1C0C4EAD001F5E49 /* libsqlite3.dylib in Frameworks */,
 				3A4C95471B5B217D0088C3F2 /* libz.dylib in Frameworks */,
-				C3AF1DFF569CDD2A11B5CA15 /* Pods_FLEX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,7 +809,6 @@
 				1C27A8B71F0E5A0400F0D02D /* FLEXTests */,
 				3A4C95451B5B216C0088C3F2 /* Frameworks */,
 				3A4C94201B5B20570088C3F2 /* Products */,
-				D1E25B81EE77C5121F893EB0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -831,6 +824,7 @@
 		3A4C94211B5B20570088C3F2 /* FLEX */ = {
 			isa = PBXGroup;
 			children = (
+				866BC6EA2E852A44008969B8 /* UIApplication+Swizzling.m */,
 				3A4C94241B5B20570088C3F2 /* FLEX.h */,
 				C386D6E824199C1B00699085 /* FLEX-Core.h */,
 				C386D6EC24199EC600699085 /* FLEX-Runtime.h */,
@@ -847,6 +841,7 @@
 				3A4C94541B5B21410088C3F2 /* Utility */,
 				3A4C945F1B5B21410088C3F2 /* ViewHierarchy */,
 				3A4C94221B5B20570088C3F2 /* Supporting Files */,
+				866BC6E82E8528F3008969B8 /* UIApplication+Swizzling.h */,
 			);
 			name = FLEX;
 			path = Classes;
@@ -1058,8 +1053,6 @@
 			children = (
 				779B1EDC1C0C4EAD001F5E49 /* libsqlite3.dylib */,
 				3A4C95461B5B217D0088C3F2 /* libz.dylib */,
-				81D567F080A1EB823006EB09 /* Pods_FLEX.framework */,
-				25567132EDD6104F8DFB4D58 /* Pods_FLEX_FLEXTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1533,18 +1526,6 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
-		D1E25B81EE77C5121F893EB0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0963D072B9C657A86B60583C /* Pods-FLEX.debug.xcconfig */,
-				FC9B72EAA12E89C30EFEFCED /* Pods-FLEX.release.xcconfig */,
-				322822C91BE1A33EEC336520 /* Pods-FLEX-FLEXTests.debug.xcconfig */,
-				E5E25AE7E9EEE3477758C720 /* Pods-FLEX-FLEXTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1615,6 +1596,7 @@
 				C34C9BDD23A7F2740031CA3E /* FLEXRuntime+UIKitHelpers.h in Headers */,
 				C35DAD822709140700AA95E6 /* FLEXHTTPTransactionDetailController.h in Headers */,
 				C398624F23AD6C67007E6793 /* FLEXRuntimeKeyPathTokenizer.h in Headers */,
+				866BC6E92E8528F3008969B8 /* UIApplication+Swizzling.h in Headers */,
 				C362AE8123C7E9D1005A86AE /* NSMapTable+FLEX_Subscripting.h in Headers */,
 				3A4C95091B5B21410088C3F2 /* FLEXFieldEditorView.h in Headers */,
 				C3E5D9FD2316E83700E655DB /* FLEXRuntime+Compare.h in Headers */,
@@ -1747,11 +1729,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C27A8C01F0E5A0400F0D02D /* Build configuration list for PBXNativeTarget "FLEXTests" */;
 			buildPhases = (
-				F3E704DF9B362D112E8A75F3 /* [CP] Check Pods Manifest.lock */,
 				1C27A8B21F0E5A0300F0D02D /* Sources */,
 				1C27A8B31F0E5A0300F0D02D /* Frameworks */,
 				1C27A8B41F0E5A0300F0D02D /* Resources */,
-				02D55A744836CB7C3CEF00FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1767,7 +1747,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A4C94351B5B20570088C3F2 /* Build configuration list for PBXNativeTarget "FLEX" */;
 			buildPhases = (
-				1958882E024E1013BDD1F0E7 /* [CP] Check Pods Manifest.lock */,
 				3A4C941A1B5B20570088C3F2 /* Sources */,
 				3A4C941B1B5B20570088C3F2 /* Frameworks */,
 				3A4C941C1B5B20570088C3F2 /* Headers */,
@@ -1838,71 +1817,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		02D55A744836CB7C3CEF00FC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FLEX-FLEXTests/Pods-FLEX-FLEXTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HyperioniOS/HyperionCore.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HyperionCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FLEX-FLEXTests/Pods-FLEX-FLEXTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1958882E024E1013BDD1F0E7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FLEX-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3E704DF9B362D112E8A75F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FLEX-FLEXTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C27A8B21F0E5A0300F0D02D /* Sources */ = {
@@ -2018,6 +1932,7 @@
 				C3EBE112287028D600702098 /* FLEXAPNSViewController.m in Sources */,
 				C3694DBB23EA1096006625D7 /* FLEXTabsViewController.m in Sources */,
 				C3A9424623C641C1006871A3 /* SceneKit+Snapshot.m in Sources */,
+				866BC6EB2E852A44008969B8 /* UIApplication+Swizzling.m in Sources */,
 				C3A04B65288E007100F2C16D /* NSDateFormatter+FLEX.m in Sources */,
 				3A4C953B1B5B21410088C3F2 /* FLEXNetworkSettingsController.m in Sources */,
 				3A4C94FC1B5B21410088C3F2 /* FLEXArgumentInputStringView.m in Sources */,
@@ -2111,7 +2026,6 @@
 /* Begin XCBuildConfiguration section */
 		1C27A8BE1F0E5A0400F0D02D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 322822C91BE1A33EEC336520 /* Pods-FLEX-FLEXTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2129,7 +2043,6 @@
 		};
 		1C27A8BF1F0E5A0400F0D02D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5E25AE7E9EEE3477758C720 /* Pods-FLEX-FLEXTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2263,7 +2176,6 @@
 		};
 		3A4C94361B5B20570088C3F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0963D072B9C657A86B60583C /* Pods-FLEX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
@@ -2300,7 +2212,6 @@
 		};
 		3A4C94371B5B20570088C3F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC9B72EAA12E89C30EFEFCED /* Pods-FLEX.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;

@@ -13,6 +13,7 @@
 #import "FLEXNavigationController.h"
 #import "FLEXObjectExplorerFactory.h"
 #import "FLEXFileBrowserController.h"
+#import "UIApplication+Swizzling.h"
 
 @interface FLEXManager () <FLEXWindowEventDelegate, FLEXExplorerViewControllerDelegate>
 
@@ -42,6 +43,10 @@
     if (self) {
         _userGlobalEntries = [NSMutableArray new];
         _customContentTypeViewers = [NSMutableDictionary new];
+        BOOL isEnabled = [UIApplication isShakeSwizzlingEnabled];
+        if (!isEnabled) {
+            [UIApplication flex_enableShakeSwizzling];
+        }
     }
     return self;
 }
